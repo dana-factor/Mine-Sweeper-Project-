@@ -1,0 +1,15 @@
+h1 {
+    color: blue;
+}
+.board{
+    height: 400px;
+    width: 400px;
+}
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    /* display: none; */
+  }
