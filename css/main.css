@@ -1,15 +1,94 @@
-h1 {
-    color: blue;
+*{
+    box-sizing: border-box;
+    font-family: monospace;
 }
-.board{
-    height: 400px;
-    width: 400px;
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    background: url(/img/img.jpg);
+}
+
+header {
+    background-color: rgb(143, 1, 1);
+    padding-top: 5px;
+}
+
+h1 {
+    color: rgb(255, 205, 112);
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+button {
+    background-color:  rgb(255, 205, 112);
+    height: 45px;
+    width: 90px;
+    font-size: x-large;
+    color: rgb(184, 35, 13);
+    border-radius: 15%;
+    border: solid 3px  rgb(233, 139, 23);
+}
+
+:hover {
+    border-color: rgb(184, 35, 13);
+}
+
+.timer {
+    font-size: xx-large;
+    color: gold;
+    display: inline-block
+}
+
+.restart {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.lives {
+   display: inline;
+   font-size: x-large;
+}
+.hints-container {
+    display: inline;
+    font-size: x-large;
+ }
+
+table {
+    /* background-color: rgb(206, 176, 176);
+    color: rgb(206, 176, 206); */
+    margin: 0 auto;
+    border:  rgb(255, 205, 112);
+    color:  rgb(255, 205, 112);;
+    /* height: 500px; */
+    /* width: 500px; */
 }
 .cell {
+    border: solid rgb(255, 205, 112);
+    background-color: rgb(233, 139, 23);
     width: 40px;
     height: 40px;
-    text-align: center;
     font-size: 1.5em;
+    color: rgb(184, 35, 13);
     box-sizing: border-box;
-    /* display: none; */
+  }
+  .clicked {
+      background-color: hsl(54, 98%, 68%) ;
+  }
+  .options{
+      margin-top: 10px;
+      height: 60px;
+      width: 170px;
+      background-color: rgb(178, 30, 4);
+      color: #ffef6b;
+  }
+  .options:hover{
+      border-color: rgb(122, 4, 2);
+  }
+  .impossible{
+    background-color: hsl(9, 100%, 50%) ;
+  }
+  .clear{
+    background-color: hsl(113, 88%, 61%) ;
   }

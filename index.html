@@ -7,20 +7,27 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<!-- <body onkeyup="handleKey(event)"> -->
-
 <body onload="init()">
     <header>
         <h1>Mine Sweeper</h1>
+        <button onclick="renderLevel(4,2,1)">Easy</button>
+        <button onclick="renderLevel(8,12,2)">Hard</button>
+        <button onclick="renderLevel(12,30,3)">Expert</button>
+
+        <button class="restart" onclick="restart()">Restart</button>
+        <div class="timer"></div>
+        <div class="lives"></div>
+        <div class="hints-container"></div>
     </header>
 
     <div class="board-container">
-
+    </div>
+    <div>
+        <button class="options safe" onclick="showSafeClicks()">Safe Click<br>(3 Available)</button>
+        <button class="options hint" onclick="showHint()">Hint<br>(3 Available)</button>
     </div>
     <script src="js/util.js"></script>
     <script src="js/main.js"></script>
-
-
 </body>
 
 </html>
